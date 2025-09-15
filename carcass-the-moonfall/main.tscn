@@ -1,3 +1,16 @@
-[gd_scene format=3 uid="uid://dfchiocbk2ykl"]
+[gd_scene load_steps=3 format=3 uid="uid://dfchiocbk2ykl"]
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_7dm0k"]
+
+[sub_resource type="MeshTexture" id="MeshTexture_ig7tw"]
+mesh = SubResource("ArrayMesh_7dm0k")
 
 [node name="Node3D" type="Node3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0245411, -0.00560689, 0.0958056)
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.236992, 3.0585)
+
+[node name="Sprite3D" type="Sprite3D" parent="."]
+transform = Transform3D(0.327763, 0.00604454, -0.0179662, -0.00746269, 0.261801, 0.0178052, 0.00602346, -0.00455428, 0.99968, -0.00647306, 0.00999808, -0.00292969)
+texture = SubResource("MeshTexture_ig7tw")
